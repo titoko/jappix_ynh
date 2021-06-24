@@ -1,31 +1,37 @@
-Jappix for Yunohost
--------------------
+# Jappix for YunoHost
 
-*This is a work-in-progress package review to update it with changes
-new facilities - e.g. helpers - coming with YunoHost 2.3.x.*
+[![Integration level](https://dash.yunohost.org/integration/jappix.svg)](https://dash.yunohost.org/appci/app/jappix) ![](https://ci-apps.yunohost.org/ci/badges/jappix.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/jappix.maintain.svg)  
+[![Install Jappix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=jappix)
 
-**Shipped version:** 1.1.6
+> *This package allows you to install Jappix quickly and simply on a YunoHost server.  
+If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
 
-[Jappix](https://jappix.org) is a full-featured XMPP web-client
-with an open social platform which enables you to host your communication
-platform wherever you want to.
+## Overview
+Jappix is a fully-featured XMPP web-client with an open social platform which enables you to host your communication platform wherever you want to.
 
-## Installation
+**Shipped version:** 1.2
 
-While it's merged to the official application list, you can install it in order
-to try - or use it with caution! - either from the command line:
+#### Supported architectures
 
-    $ sudo yunohost app install https://github.com/YunoHost-Apps/jappix_ynh/tree/testing
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/jappix.svg)](https://ci-apps.yunohost.org/ci/apps/jappix/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/jappix.svg)](https://ci-apps-arm.yunohost.org/ci/apps/jappix/)
 
-or from the Web administration:
+## Links
 
-  * Go to *Applications*
-  * Click on *Install*
-  * Scroll to the bottom of the page and put `https://github.com/YunoHost-Apps/jappix_ynh/tree/testing`
-    under **Install custom app**.
+ * Report a bug: https://github.com/YunoHost-Apps/jappix_ynh/issues
+ * App website: Link to the official website of this app.
+ * Upstream app repository: https://github.com/jappix/jappix/
+ * YunoHost website: https://yunohost.org/
 
-## Links ##
+---
 
-**Jappix**: https://jappix.org/
+## Developer info
 
-**YunoHost**: https://yunohost.org/
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/jappix_ynh/tree/testing).
+
+To try the testing branch, please proceed like that.
+```
+sudo yunohost app install https://github.com/YunoHost-Apps/jappix_ynh/tree/testing --debug
+or
+sudo yunohost app upgrade jappix -u https://github.com/YunoHost-Apps/jappix_ynh/tree/testing --debug
+```
